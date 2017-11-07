@@ -1,0 +1,10 @@
+<h1>List of Books</h1>
+
+<% @books.each do |book| %>
+  <div>
+  <p>Title  : <%= book.title %></p>
+  <p>Author : <%= book.author %></p>
+  <p>Read?  :<%= book.already_read %></p>
+  <br>
+  </div>
+<% end %>
